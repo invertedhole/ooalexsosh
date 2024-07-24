@@ -12,8 +12,6 @@
             padding: 0;
             background-color: #FFFFF0;
         }
-
-       
         /* Стиль для вкладок */
         .tabs {
             display: flex;
@@ -24,7 +22,6 @@
     border: none;
     background-color: #8FBC8F;
         }
-
         .tabs li {
             flex: 1;
             text-align: center;
@@ -32,17 +29,14 @@
             cursor: pointer;
             padding: 10px;
         }
-
         .tabs li.active {
             border-bottom: 2px solid #007bff;
         }
-
         /* Стиль для контента вкладок */
         .tab-content {
             display: none;
             padding: 20px;
         }
-
         .tab-content.active {
             display: block;
         }
@@ -167,25 +161,20 @@ body {
         <!-- Нижняя часть сайта -->
         <p>&copy; 2024  сайт  ГБУ ОО ЗО "Алексеевская СОШ"</p>
     </footer>
-
     <script>
         // JavaScript для управления вкладками
         const tabs = document.querySelectorAll('.tabs li');
         const tabContents = document.querySelectorAll('.tab-content');
-
         tabs.forEach(tab => {
             tab.addEventListener('click', () => {
                 const targetTab = tab.dataset.tab;
                 const targetContent = document.getElementById(targetTab);
-
                 tabs.forEach(tab => {
                     tab.classList.remove('active');
                 });
-
                 tabContents.forEach(content => {
                     content.classList.remove('active');
                 });
-
                 tab.classList.add('active');
                 targetContent.classList.add('active');
             });
