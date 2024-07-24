@@ -116,7 +116,6 @@ body {
 .tab button:hover {
     background-color: #ddd;
 }
-
 /* Стили для активной кнопки при наведении */
 .tab button.active:hover {
     background-color: #ccc;
@@ -136,7 +135,6 @@ body {
         document.getElementById(cityName).style.display = "block";
         evt.currentTarget.className += " active";
     }
-
     // Открыть первую вкладку по умолчанию
     document.getElementById("defaultOpen").click();
 </script>
