@@ -62,8 +62,8 @@
            <div id="tab2" class="tab-content"> 
 <body>         
 <div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'Первый звонок 2024')" id="defaultOpen"<Первый звонок 2024> </button>
-    <button class="tablinks" onclick="openCity(event, 'Выпуск 2024')"<Выпуск 2024> </button>
+    <button class="tablinks" onclick="openCity(event, 'Первый звонок 2024')" id="defaultOpen"<Первый звонок 2024</button>
+    <button class="tablinks" onclick="openCity(event, 'Выпуск 2024')" <Выпуск 2024</button>
 </div>
 <div id="Первый звонок 2024" class="tabcontent">
     <h3>дзынь</h3>
