@@ -60,17 +60,14 @@
 <p>Директор:+7 990 077 2103
 <p>Отдел кадров +7 990 058 1933</p>
            <div id="tab2" class="tab-content">
-<body>
 <div class="tab">
     <button class="tablinks" onclick="openCity(event, 'Первый звонок 2024')" id="defaultOpen">Первый звонок 2024</button>
     <button class="tablinks" onclick="openCity(event, 'Выпуск 2024')">Выпуск 2024</button>
 </div>
-
 <div id="Первый звонок 2024" class="tabcontent">
     <h3>дзынь</h3>
     <p>дзынь.</p>
 </div>
-
 <div id="Выпуск 2024" class="tabcontent">
     <h3>(=(=(=</h3>
     <p>Выпуск 2024</p>
@@ -86,7 +83,6 @@ body {
     border: none;
     background-color: #f1f1f1;
 }
-
 /* Стили для кнопок вкладки */
 .tab button {
     background-color: #f1f1f1;
@@ -97,30 +93,25 @@ body {
     padding: 14px 16px;
     transition: background-color 0.5s ease;
 }
-
 /* Стили для активной кнопки */
 .tab button.active {
     background-color: #ccc;
 }
-
 /* Стили для контента вкладки */
 .tabcontent {
     display: none;
     padding: 6px 12px;
 }
-
 /* Стили для активного контента вкладки */
 .tabcontent.active {
     display: block;
     animation: fadeIn 0.5s ease;
 }
-
 /* CSS-анимация для активного контента вкладки */
 @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity: 1;}
 }
-
 /* Стили для изменения цвета кнопок при наведении */
 .tab button:hover {
     background-color: #ddd;
