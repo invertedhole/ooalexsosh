@@ -67,7 +67,6 @@
 <p>Отдел кадров +7 990 058 1933</p>
           </div>
            <div id="tab2" class="tab-content">
-            <p></head>
 <body>
 
 <div class="tab">
