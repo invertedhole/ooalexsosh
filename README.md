@@ -65,10 +65,8 @@
             <p>Контактные данные
 <p>Директор:+7 990 077 2103
 <p>Отдел кадров +7 990 058 1933</p>
-          </div>
            <div id="tab2" class="tab-content">
 <body>
-
 <div class="tab">
     <button class="tablinks" onclick="openCity(event, 'Первый звонок 2024')" id="defaultOpen">Первый звонок 2024</button>
     <button class="tablinks" onclick="openCity(event, 'Выпуск 2024')">Выпуск 2024</button>
