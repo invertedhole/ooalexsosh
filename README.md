@@ -53,7 +53,7 @@
     <header>
         <!-- Заголовок сайта -->
         <h1></h1>
-<p><img src="/C:Users\User\Desktop\картинка2.jpg." width="300" height="200"><img src="/C:Users\User\Desktop\картинка2.png." width="1200" height="200">
+<p><img src="(https://raw.githubusercontent.com/invertedhole/ooalexsosh/main/картинка2.PNG) width="1200" height="300">
     </header>
     <main>
         <!-- Основное содержимое сайта -->
