@@ -70,73 +70,8 @@
   <div class="tab">
     <div class="tab-content">
       <!-- Контент для второй вкладки -->
-    </div>
   </div>
   <!-- Добавьте другие вкладки с аналогичной структурой -->
-.tabs-container {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  overflow: hidden;
-}
-.tab {
-  display: none;
-  flex-grow: 1;
-  padding: 10px;
-  transition: background-color 0.3s ease;
-}
-.tab:hover {
-  background-color: #f2f2f2;
-}
-.tab.active {
-  display: flex;
-  background-color: #f2f2f2;
-}
-.tab-content {
-  display: none;
-  flex-grow: 1;
-  padding: 10px;
-  transition: opacity 0.3s ease;
-}
-.tab-content.active {
-  display: flex;
-  opacity: 1;
-}
-.tab.active .tab-content.active {
-  animation: fadeIn 0.3s ease;
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-const tabs = document.querySelectorAll('.tab');
-tabs.forEach(tab => {
-  tab.addEventListener('click', () => {
-    tabs.forEach(tab => tab.classList.remove('active'));
-    tab.classList.add('active');
-
-    const tabNumber = tab.getAttribute('data-tab');
-    const tabContents = document.querySelectorAll('.tab-content');
-
-    tabContents.forEach(content => content.classList.remove('active'));
-    tabContents[tabNumber - 1].classList.add('active');
-  });
-});
-Вы можете загрузить файл с этим скриптом на GitHub, но он не будет работать на GitHub Pages. Вместо этого, используйте CSS-псевдоклассы для управления активными вкладками:
-
-.tab:target {
-  display: flex;
-  background-color: #f2f2f2;
-}
-.tab:target .tab-content {
-  display: flex;
-  opacity: 1;
-}
 <div class="tabs-container">
   <div class="tab" id="tab1">
     <div class="tab-content">
@@ -145,13 +80,9 @@ tabs.forEach(tab => {
   </div>
   <div class="tab" id="tab2">
     <div class="tab-content">
-      <!-- Контент для второй вкладки -->
-    </div>
-  </div>
-  <!-- Добавьте другие вкладки с аналогичной структурой -->
 </div>
-<syle>
-.tabs-container {
+<div>
+      .tabs-container {
   display: flex;
   flex-direction: column;
   border: 1px solid #ccc;
@@ -192,17 +123,14 @@ tabs.forEach(tab => {
     opacity: 1;
   }
 }
-
 .tab:target {
   display: flex;
   background-color: #f2f2f2;
 }
-
 .tab:target .tab-content {
   display: flex;
   opacity: 1;
-} 
-</syle>
+}
   </div>
         <div id="tab3" class="tab-content">
             <p>Контент вкладки 3</p>
