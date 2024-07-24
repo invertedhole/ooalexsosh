@@ -1,5 +1,4 @@
-# ooalexsosh
-<!DOCTYPE html>
+# ГБУ ОО ЗО "Алексеевская СОШ"
 <html lang="en">
 <head>
     <meta charset="UTF-8">
