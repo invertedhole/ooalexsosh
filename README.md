@@ -61,89 +61,149 @@
 <p>Отдел кадров +7 990 058 1933</p>   
 </span>
             <div id="tab2" class="tab-content"> 
-<body>         
-<div class="tab">
-    <button class="tablinks" onclick="openCity(event,'Первый звонок 2024')" id="defaultOpen"<Первый звонок 2024</button>
-    <button class="tablinks" onclick="openCity(event, "Выпуск 2024")" <Выпуск 2024</button>
-</div>
-<div id="Первый звонок 2024" class="tabcontent">
-    <h3>дзынь</h3>
-    <p>дзынь.</p>
-</div>
-<div id="Выпуск 2024" class="tabcontent">
-    <h3>(=(=(=</h3>
-    <p>Выпуск 2024</p>
-<style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+<div class="tabs-container">
+  <div class="tab">
+    <div class="tab-content">
+      <!-- Контент для первой вкладки -->
+    </div>
+  </div>
+  <div class="tab">
+    <div class="tab-content">
+      <!-- Контент для второй вкладки -->
+    </div>
+  </div>
+  <!-- Добавьте другие вкладки с аналогичной структурой -->
+.tabs-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
 }
-/* Стили для вкладки */
 .tab {
-    overflow: hidden;
-    border: none;
-    background-color: #f1f1f1;
+  display: none;
+  flex-grow: 1;
+  padding: 10px;
+  transition: background-color 0.3s ease;
 }
-/* Стили для кнопок вкладки */
-.tab button {
-    background-color: #f1f1f1;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: background-color 0.5s ease;
+.tab:hover {
+  background-color: #f2f2f2;
 }
-/* Стили для активной кнопки */
-.tab button.active {
-    background-color: #ccc;
+.tab.active {
+  display: flex;
+  background-color: #f2f2f2;
 }
-/* Стили для контента вкладки */
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
+.tab-content {
+  display: none;
+  flex-grow: 1;
+  padding: 10px;
+  transition: opacity 0.3s ease;
 }
-/* Стили для активного контента вкладки */
-.tabcontent.active {
-    display: block;
-    animation: fadeIn 0.5s ease;
+.tab-content.active {
+  display: flex;
+  opacity: 1;
 }
-/* CSS-анимация для активного контента вкладки */
+.tab.active .tab-content.active {
+  animation: fadeIn 0.3s ease;
+}
 @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-/* Стили для изменения цвета кнопок при наведении */
-.tab button:hover {
-    background-color: #ddd;
+const tabs = document.querySelectorAll('.tab');
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    tabs.forEach(tab => tab.classList.remove('active'));
+    tab.classList.add('active');
+
+    const tabNumber = tab.getAttribute('data-tab');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    tabContents.forEach(content => content.classList.remove('active'));
+    tabContents[tabNumber - 1].classList.add('active');
+  });
+});
+Вы можете загрузить файл с этим скриптом на GitHub, но он не будет работать на GitHub Pages. Вместо этого, используйте CSS-псевдоклассы для управления активными вкладками:
+
+.tab:target {
+  display: flex;
+  background-color: #f2f2f2;
 }
-/* Стили для активной кнопки при наведении */
-.tab button.active:hover {
-    background-color: #ccc;
+.tab:target .tab-content {
+  display: flex;
+  opacity: 1;
 }
-</style>
-<script>
-    function openCity(evt, cityName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
-    }
-    // Открыть первую вкладку по умолчанию
-    document.getElementById("defaultOpen").click();
-</script>
+<div class="tabs-container">
+  <div class="tab" id="tab1">
+    <div class="tab-content">
+      <!-- Контент для первой вкладки -->
+    </div>
+  </div>
+  <div class="tab" id="tab2">
+    <div class="tab-content">
+      <!-- Контент для второй вкладки -->
+    </div>
+  </div>
+  <!-- Добавьте другие вкладки с аналогичной структурой -->
 </div>
-</body></p>
-           <ul class="tabs">
-        </div>
+<syle>
+.tabs-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.tab {
+  display: none;
+  flex-grow: 1;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+.tab:hover {
+  background-color: #f2f2f2;
+}
+.tab.active {
+  display: flex;
+  background-color: #f2f2f2;
+}
+.tab-content {
+  display: none;
+  flex-grow: 1;
+  padding: 10px;
+  transition: opacity 0.3s ease;
+}
+.tab-content.active {
+  display: flex;
+  opacity: 1;
+}
+.tab.active .tab-content.active {
+  animation: fadeIn 0.3s ease;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.tab:target {
+  display: flex;
+  background-color: #f2f2f2;
+}
+
+.tab:target .tab-content {
+  display: flex;
+  opacity: 1;
+} 
+</syle>
+  </div>
         <div id="tab3" class="tab-content">
             <p>Контент вкладки 3</p>
         </div>
