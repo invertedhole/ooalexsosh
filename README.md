@@ -55,12 +55,11 @@
             <li data-tab="tab2">Жизнь школы</li>
             <li data-tab="tab3">Новости</li>
         </ul>
-        <div id="tab1" class="tab-content active">
+        <span> id="tab1" class="tab-content active">
             <p>Контактные данные
 <p>Директор:+7 990 077 2103
 <p>Отдел кадров +7 990 058 1933</p>   
-        
-</div>
+</span>
             <div id="tab2" class="tab-content"> 
 <body>         
 <div class="tab">
