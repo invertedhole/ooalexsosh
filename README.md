@@ -10,7 +10,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #FFDAB9;
+            background-color: #F0FFF0;
         }
         /* Стиль для вкладок */
         .tabs {
@@ -46,7 +46,7 @@
     <header>
         <!-- Заголовок сайта -->
         <h1></h1>
-<p><img src="/C:Users\User\Desktop\картинка2.jpg." width="300" height="200"><img src= https://raw.githubusercontent.com/invertedhole/ooalexsosh/main/картинка2.PNG" width="1200" height="200">
+<p>><img src= https://raw.githubusercontent.com/invertedhole/ooalexsosh/main/картинка2.PNG" width="1200" height="200">
     </header>
     <main>
         <!-- Основное содержимое сайта -->
@@ -61,7 +61,6 @@
 <p>Отдел кадров +7 990 058 1933</p>
           </div>
            <div id="tab2" class="tab-content">
-            <p></head>
 <body>
 <div class="tab">
     <button class="tablinks" onclick="openCity(event, 'Первый звонок 2024')" id="defaultOpen">Первый звонок 2024</button>
