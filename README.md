@@ -40,6 +40,80 @@
         .tab-content.active {
             display: block;
         }
+     body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+}
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+nav a:hover {
+    background-color: #555;
+}
+.content {
+    padding: 20px;
+}
+/* Vertical Tabs */
+.vertical-tabs {
+    display: flex;
+}
+.tab {
+    flex: 1;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+}
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 10px 15px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.tab button:hover {
+    background-color: #ddd;
+}
+.tab button.active {
+    background-color: #ccc;
+}
+.tabcontent {
+    flex: 3;
+    padding: 10px;
+    border-left: 1px solid #ccc;
+    display: none;
+}
+.tabcontent.show {
+    display: block;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
     </style>
 </head>
 <body>
@@ -61,88 +135,46 @@
 <p>Отдел кадров +7 990 058 1933</p>
           </div>
            <div id="tab2" class="tab-content">
-<div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'Первый звонок 2024')" id="defaultOpen">Первый звонок 2024</button>
-    <button class="tablinks" onclick="openCity(event, 'Выпуск 2024')">Выпуск 2024</button>
-</div>
-<div id="Первый звонок 2024" class="tabcontent">
-    <h3>дзынь</h3>
-    <p>дзынь.</p>
-</div>
-<div id="Выпуск 2024" class="tabcontent">
-    <h3>(=(=(=</h3>
-    <p>Выпуск 2024</p>
-<style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-/* Стили для вкладки */
-.tab {
-    overflow: hidden;
-    border: none;
-    background-color: #f1f1f1;
-}
-/* Стили для кнопок вкладки */
-.tab button {
-    background-color: #f1f1f1;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: background-color 0.5s ease;
-}
-/* Стили для активной кнопки */
-.tab button.active {
-    background-color: #ccc;
-}
-/* Стили для контента вкладки */
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-}
-/* Стили для активного контента вкладки */
-.tabcontent.active {
-    display: block;
-    animation: fadeIn 0.5s ease;
-}
-/* CSS-анимация для активного контента вкладки */
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-/* Стили для изменения цвета кнопок при наведении */
-.tab button:hover {
-    background-color: #ddd;
-}
-/* Стили для активной кнопки при наведении */
-.tab button.active:hover {
-    background-color: #ccc;
-}
-</style>
-<script>
-    function openCity(evt, cityName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
-    }
-    // Открыть первую вкладку по умолчанию
-    document.getElementById("defaultOpen").click();
-</script>
-</div>
-</body></p>
-           <ul class="tabs">
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo">
+        <h1>Welcome to My Website</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="content">
+        <h2>Home Page</h2>
+        <p>This is the home page content.</p>
+        <!-- Vertical Tabs -->
+        <div class="vertical-tabs">
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Tab1')">Tab 1</button>
+                <button class="tablinks" onclick="openTab(event, 'Tab2')">Tab 2</button>
+                <button class="tablinks" onclick="openTab(event, 'Tab3')">Tab 3</button>
+            </div>
+            <div id="Tab1" class="tabcontent">
+                <h3>Tab 1</h3>
+                <p>Content for Tab 1.</p>
+            </div>
+            <div id="Tab2" class="tabcontent">
+                <h3>Tab 2</h3>
+                <p>Content for Tab 2.</p>
+            </div>
+            <div id="Tab3" class="tabcontent">
+                <h3>Tab 3</h3>
+                <p>Content for Tab 3.</p>
+            </div>
         </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
         <div id="tab3" class="tab-content">
             <p>Контент вкладки 3</p>
         </div>
@@ -152,6 +184,36 @@ body {
         <p>&copy; 2024  сайт  ГБУ ОО ЗО "Алексеевская СОШ"</p>
     </footer>
     <script>
+// Simple script to highlight the current page in the navigation menu
+document.addEventListener("DOMContentLoaded", function () {
+    const currentPath = window.location.pathname;
+    const navLinks = document.querySelectorAll("nav a");
+    navLinks.forEach(link => {
+        if (link.getAttribute("href") === currentPath) {
+            link.style.backgroundColor = "#555";
+        }
+    });
+});
+function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+// Show the first tab by default
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelector(".tablinks").click();
+});
         // JavaScript для управления вкладками
         const tabs = document.querySelectorAll('.tabs li');
         const tabContents = document.querySelectorAll('.tab-content');
