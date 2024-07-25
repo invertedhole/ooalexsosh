@@ -46,7 +46,7 @@
     <header>
         <!-- Заголовок сайта -->
         <h1></h1>
-<p>><img src= https://raw.githubusercontent.com/invertedhole/ooalexsosh/main/картинка2.PNG>
+<p>> <img src= https://raw.githubusercontent.com/invertedhole/ooalexsosh/main/картинка2.PNG>
     </header>
     <main>
         <!-- Основное содержимое сайта -->
@@ -59,8 +59,8 @@
             <p>Контактные данные
 <p>Директор:+7 990 077 2103
 <p>Отдел кадров +7 990 058 1933</p>
-          </div>
            <div id="tab2" class="tab-content">
+<p>fdfdf</p>
 <body>
     <div class="tab-container">
         <div class="tab-links">
