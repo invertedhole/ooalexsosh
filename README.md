@@ -59,7 +59,7 @@
             <p>Контактные данные
 <p>Директор:+7 990 077 2103
 <p>Отдел кадров +7 990 058 1933</p>   
-</span>
+        </div>
             <div id="tab2" class="tab-content"> 
     <div class="tab-container">
         <div class="tab-links">
@@ -83,6 +83,48 @@
     <script src="scripts.js"></script>
 </body>
   </div>
+        <style>.
+  tabs-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.tab {
+  display: none;
+  flex-grow: 1;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+.tab:hover {
+  background-color: #f2f2f2;
+}
+.tab.active {
+  display: flex;
+  background-color: #f2f2f2;
+}
+.tab-content {
+  display: none;
+  flex-grow: 1;
+  padding: 10px;
+  transition: opacity 0.3s ease;
+}
+.tab-content.active {
+  display: flex;
+  opacity: 1;
+}
+.tab.active .tab-content.active {
+  animation: fadeIn 0.3s ease;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}</style>
         <div id="tab3" class="tab-content">
             <p>Контент вкладки 3</p>
         </div>
