@@ -122,36 +122,11 @@
 <p>Отдел кадров +7 990 058 1933</p>       
  </div>
         <div class="tab-content" id="tab2">
-   <ul class="tabs">
-            <div class="tab-container">
-        <div class="tab-links">
-            <button class="tab-link active" onclick="openTab(event, 'Home')">Home</button>
-            <button class="tab-link" onclick="openTab(event, 'About')">About</button>
-            <button class="tab-link" onclick="openTab(event, 'Projects')">Projects</button>
-            <button class="tab-link" onclick="openTab(event, 'Contact')">Contact</button>
-        </div>
-        <div class="tab-content" id="Home">
-            <h2>Home</h2>
-            <p>Welcome to my GitHub page!</p>
-            <img src="images/home.jpg" alt="Home Image">
-        </div>
-        <div class="tab-content" id="About" style="display:none;">
-            <h2>About</h2>
-            <p>This is the about section.</p>
-            <img src="images/about.jpg" alt="About Image">
-        </div>
-        <div class="tab-content" id="Projects" style="display:none;">
-            <h2>Projects</h2>
-            <p>These are my projects.</p>
-            <img src="images/projects.jpg" alt="Projects Image">
-        </div>
-        <div class="tab-content" id="Contact" style="display:none;">
-            <h2>Contact</h2>
-            <p>Get in touch with me.</p>
-            <img src="images/contact.jpg" alt="Contact Image">
-        </div>
-    </div>
-    <script src="scripts.js"></script>
+  <ul class="tabs">
+            <li class="active" data-tab="tab1">О нас</li>
+            <li data-tab="tab2">Жизнь школы</li>
+            <li data-tab="tab3">Новости</li>
+        </ul>
         <div id="tab3" class="tab-content">
             <p>Контент вкладки 3</p>
         </div>
