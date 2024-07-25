@@ -1,5 +1,5 @@
 # ГБУ ОО ЗО "Алексеевская СОШ"
-<html lang="en">
+<html lang="ru">
 <head>
    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,8 +20,8 @@
     border: none;
     background-color: #8FBC8F;
         }
-        .tabs li {
-            flex: 1;
+            .tabs li {
+       flex: 1;
             text-align: center;
             border-bottom: 2px solid transparent;
             cursor: pointer;
@@ -30,7 +30,6 @@
         .tabs li.active {
             border-bottom: 2px solid #007bff;
         }
-        /* Стиль для контента вкладок */
         .tab-content {
             display: none;
             padding: 20px;
