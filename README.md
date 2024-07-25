@@ -125,5 +125,24 @@
     <footer>
         <p>&copy; 2024  сайт  ГБУ ОО ЗО "Алексеевская СОШ"</p>
     </footer>
+                <script>
+        // JavaScript для управления вкладками
+        const tabs = document.querySelectorAll('.tabs li');
+        const tabContents = document.querySelectorAll('.tab-content');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const targetTab = tab.dataset.tab;
+                const targetContent = document.getElementById(targetTab);
+                tabs.forEach(tab => {
+                    tab.classList.remove('active');
+                });
+                tabContents.forEach(content => {
+                    content.classList.remove('active');
+                });
+                tab.classList.add('active');
+                targetContent.classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html>
