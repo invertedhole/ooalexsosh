@@ -48,7 +48,8 @@
         <h1></h1>
 <p>> <img src= https://raw.githubusercontent.com/invertedhole/ooalexsosh/main/картинка2.PNG>
     </header>
-    <main>
+ 
+<main>
         <!-- Основное содержимое сайта -->
         <ul class="tabs">
             <li class="active" data-tab="tab1">О нас</li>
