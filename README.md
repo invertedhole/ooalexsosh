@@ -61,76 +61,27 @@
 <p>Отдел кадров +7 990 058 1933</p>   
 </span>
             <div id="tab2" class="tab-content"> 
-<div class="tabs-container">
-  <div class="tab">
-    <div class="tab-content">
-      <!-- Контент для первой вкладки -->
+    <div class="tab-container">
+        <div class="tab-links">
+            <button class="tab-link active" onclick="openTab(event, 'Tab1')">Tab 1</button>
+            <button class="tab-link" onclick="openTab(event, 'Tab2')">Tab 2</button>
+            <button class="tab-link" onclick="openTab(event, 'Tab3')">Tab 3</button>
+        </div>
+        <div class="tab-content" id="Tab1">
+            <h2>Tab 1 Content</h2>
+            <p>This is the content for Tab 1.</p>
+        </div>
+        <div class="tab-content" id="Tab2" style="display:none;">
+            <h2>Tab 2 Content</h2>
+            <p>This is the content for Tab 2.</p>
+        </div>
+        <div class="tab-content" id="Tab3" style="display:none;">
+            <h2>Tab 3 Content</h2>
+            <p>This is the content for Tab 3.</p>
+        </div>
     </div>
-  </div>
-  <div class="tab">
-    <div class="tab-content">
-      <!-- Контент для второй вкладки -->
-  </div>
-  <!-- Добавьте другие вкладки с аналогичной структурой -->
-<div class="tabs-container">
-  <div class="tab" id="tab1">
-    <div class="tab-content">
-      <!-- Контент для первой вкладки -->
-    </div>
-  </div>
-  <div class="tab" id="tab2">
-    <div class="tab-content">
-</div>
-<div>
-      .tabs-container {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  overflow: hidden;
-}
-.tab {
-  display: none;
-  flex-grow: 1;
-  padding: 10px;
-  transition: background-color 0.3s ease;
-}
-.tab:hover {
-  background-color: #f2f2f2;
-}
-.tab.active {
-  display: flex;
-  background-color: #f2f2f2;
-}
-.tab-content {
-  display: none;
-  flex-grow: 1;
-  padding: 10px;
-  transition: opacity 0.3s ease;
-}
-.tab-content.active {
-  display: flex;
-  opacity: 1;
-}
-.tab.active .tab-content.active {
-  animation: fadeIn 0.3s ease;
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.tab:target {
-  display: flex;
-  background-color: #f2f2f2;
-}
-.tab:target .tab-content {
-  display: flex;
-  opacity: 1;
-}
+    <script src="scripts.js"></script>
+</body>
   </div>
         <div id="tab3" class="tab-content">
             <p>Контент вкладки 3</p>
