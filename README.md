@@ -58,8 +58,7 @@
 <p>Директор:+7 990 077 2103
 <p>Отдел кадров +7 990 058 1933</p>       
  </div>
-        <div id="tab2" class="tab-content">
-            <p> 
+        <div class="tab-content" id="tab2">
                 <body>
                     <div class="tab-links">
             <button class="tab-link active" onclick="openTab(event, 'Home')">Home</button>
