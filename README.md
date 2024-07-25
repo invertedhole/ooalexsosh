@@ -61,6 +61,7 @@
 <p>Отдел кадров +7 990 058 1933</p>   
         </div>
             <div id="tab2" class="tab-content"> 
+   <body>
     <div class="tab-container">
         <div class="tab-links">
             <button class="tab-link active" onclick="openTab(event, 'Tab1')">Tab 1</button>
@@ -82,50 +83,43 @@
     </div>
     <script src="scripts.js"></script>
 </body>
-  </div>
-        <style>.
-  tabs-container {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  overflow: hidden;
+ <style              
+body {
+    font-family: Arial, sans-serif;
 }
-.tab {
-  display: none;
-  flex-grow: 1;
-  padding: 10px;
-  transition: background-color 0.3s ease;
+.tab-container {
+    display: flex;
 }
-.tab:hover {
-  background-color: #f2f2f2;
+.tab-links {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
-.tab.active {
-  display: flex;
-  background-color: #f2f2f2;
+.tab-link {
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.tab-link:hover {
+    background-color: #ddd;
+}
+.tab-link.active {
+    background-color: #ccc;
 }
 .tab-content {
-  display: none;
-  flex-grow: 1;
-  padding: 10px;
-  transition: opacity 0.3s ease;
+    flex: 4;
+    padding: 20px;
+    border-left: 1px solid #ccc;
 }
-.tab-content.active {
-  display: flex;
-  opacity: 1;
-}
-.tab.active .tab-content.active {
-  animation: fadeIn 0.3s ease;
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}</style>
-        <div id="tab3" class="tab-content">
+.tab-content h2 {
+    margin-top: 0;
+} 
+     </style>
+     <div id="tab3" class="tab-content">
             <p>Контент вкладки 3</p>
         </div>
     </main>
