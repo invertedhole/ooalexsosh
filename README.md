@@ -122,7 +122,8 @@
 <p>Отдел кадров +7 990 058 1933</p>       
  </div>
         <div class="tab-content" id="tab2">
-    <div class="tab-container">
+   <ul class="tabs">
+            <div class="tab-container">
         <div class="tab-links">
             <button class="tab-link active" onclick="openTab(event, 'Home')">Home</button>
             <button class="tab-link" onclick="openTab(event, 'About')">About</button>
@@ -154,6 +155,7 @@
         <div id="tab3" class="tab-content">
             <p>Контент вкладки 3</p>
         </div>
+       </ul>
     </main>
     <footer>
         <!-- Нижняя часть сайта -->
