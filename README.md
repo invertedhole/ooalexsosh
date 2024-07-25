@@ -45,7 +45,7 @@
 <body>
     <header>
         <!-- Заголовок сайта -->
-        <h1></h1>
+        <h1>ГБУ ОО ЗО Алексеевская СОШ"</h1>
         <img src=<img src="https://raw.githubusercontent.com/invertedhole/ooalexsosh/main/картинка2.PNG">
     </header>
     <main>
