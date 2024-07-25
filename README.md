@@ -137,6 +137,7 @@
             });
         });
     </script>
+   </body>               
      <div id="tab3" class="tab-content">
             <p>Контент вкладки 3</p>
         </div>
