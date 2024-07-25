@@ -57,8 +57,37 @@
             <p>Контактные данные
 <p>Директор:+7 990 077 2103
 <p>Отдел кадров +7 990 058 1933</p>       
-            <div id="tab2" class="tab-content">
-                <div class="tab-container">
+              </div>
+        <div id="tab2" class="tab-content">
+            <p> <div class="tab-links">
+            <button class="tab-link active" onclick="openTab(event, 'Home')">Home</button>
+            <button class="tab-link" onclick="openTab(event, 'About')">About</button>
+            <button class="tab-link" onclick="openTab(event, 'Projects')">Projects</button>
+            <button class="tab-link" onclick="openTab(event, 'Contact')">Contact</button>
+        </div>
+        <div class="tab-content" id="Home">
+            <h2>Home</h2>
+            <p>Welcome to my GitHub page!</p>
+            <img src="images/home.jpg" alt="Home Image">
+        </div>
+        <div class="tab-content" id="About" style="display:none;">
+            <h2>About</h2>
+            <p>This is the about section.</p>
+            <img src="images/about.jpg" alt="About Image">
+        </div>
+        <div class="tab-content" id="Projects" style="display:none;">
+            <h2>Projects</h2>
+            <p>These are my projects.</p>
+            <img src="images/projects.jpg" alt="Projects Image">
+        </div>
+        <div class="tab-content" id="Contact" style="display:none;">
+            <h2>Contact</h2>
+            <p>Get in touch with me.</p>
+            <img src="images/contact.jpg" alt="Contact Image">
+        </div>
+    <script src="scripts.js"></script>
+</body>2</p>
+        </div>
         <div class="tab-links">
             <button class="tab-link active" onclick="openTab(event, 'Home')">Home</button>
             <button class="tab-link" onclick="openTab(event, 'About')">About</button>
