@@ -45,8 +45,8 @@
 <body>
     <header>
         <!-- Заголовок сайта -->
-        <h1>ГБУ ОО ЗО Алексеевская СОШ"</h1>
-        <img src=<img src="https://raw.githubusercontent.com/invertedhole/ooalexsosh/main/картинка2.PNG">
+        <h1>ГБУ ОО ЗО "Алексеевская СОШ"</h1>
+ <img src="https://raw.githubusercontent.com/invertedhole/ooalexsosh/main/картинка2.PNG">
     </header>
     <main>
         <!-- Основное содержимое сайта -->
@@ -174,5 +174,3 @@ body {
     </script>
 </body>
 </html>
-        <img src="https://raw.githubusercontent.com/invertedhole/ooalexsosh/main/картинка2.PNG">
-    
