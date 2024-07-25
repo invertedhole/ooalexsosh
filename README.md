@@ -64,21 +64,21 @@
    <body>
     <div class="tab-container">
         <div class="tab-links">
-            <button class="tab-link active" onclick="openTab(event, 'Tab1')">Tab 1</button>
-            <button class="tab-link" onclick="openTab(event, 'Tab2')">Tab 2</button>
-            <button class="tab-link" onclick="openTab(event, 'Tab3')">Tab 3</button>
+            <button class="tab-link active" onclick="openTab(event, 'Tab1')">Выпуск 2024</button>
+            <button class="tab-link" onclick="openTab(event, 'Tab2')">Мероприятия</button>
+            <button class="tab-link" onclick="openTab(event, 'Tab3')">Первый звонок 2024</button>
         </div>
         <div class="tab-content" id="Tab1">
-            <h2>Tab 1 Content</h2>
+            <h2>Выпуск 2024 Content</h2>
             <p>This is the content for Tab 1.</p>
         </div>
         <div class="tab-content" id="Tab2" style="display:none;">
-            <h2>Tab 2 Content</h2>
+            <h2>Мероприятия Content</h2>
             <p>This is the content for Tab 2.</p>
         </div>
         <div class="tab-content" id="Tab3" style="display:none;">
-            <h2>Tab 3 Content</h2>
-            <p>This is the content for Tab 3.</p>
+            <h2>Первый звонок 2024 Content</h2>
+            <p>This is the content for Первый звонок 2024.</p>
         </div>
     </div>
     <script src="scripts.js"></script>
@@ -118,6 +118,25 @@
     margin-top: 0;
 } 
  </style>
+      <script>
+                // JavaScript для управления вкладками
+        const tabs = document.querySelectorAll('.tabs li');
+        const tabContents = document.querySelectorAll('.tab-content');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const targetTab = tab.dataset.tab;
+                const targetContent = document.getElementById(targetTab);
+                tabs.forEach(tab => {
+                    tab.classList.remove('active');
+                });
+                tabContents.forEach(content => {
+                    content.classList.remove('active');
+                });
+                tab.classList.add('active');
+                targetContent.classList.add('active');
+            });
+        });
+    </script>
      <div id="tab3" class="tab-content">
             <p>Контент вкладки 3</p>
         </div>
