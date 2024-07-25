@@ -46,7 +46,7 @@
     <header>
         <!-- Заголовок сайта -->
         <h1></h1>
-<p><img src= https://raw.githubusercontent.com/invertedhole/ooalexsosh/main/картинка2.PNG"width="1200" height="200">
+<img src=https://raw.githubusercontent.com/invertedhole/ooalexsosh/main/картинка2.PNG"width="1200" height="200">
     </header>
     <main>
         <!-- Основное содержимое сайта -->
