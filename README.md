@@ -1,4 +1,4 @@
-# ГБУ ОО ЗО "Алексеевская СОШ"
+<!DOCTYPE html>
 <html lang="ru">
 <head>
    <meta charset="UTF-8">
@@ -88,7 +88,6 @@
 </body>
 </html>
 <style>
-/* styles.css */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
