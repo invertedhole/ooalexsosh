@@ -3,16 +3,14 @@
 <head>
    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой сайт</title>
+    <title>Сайт школы</title>
     <style>
-       /* Базовый стиль для всего сайта */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #FFDAB9;
         }       
-        /* Стиль для вкладок */
         .tabs {
             display: flex;
             list-style: none;
@@ -44,11 +42,9 @@
 </head>
 <body>
     <header>
-        <!-- Заголовок сайта -->
         <h1></h1>
 <p> <img src=https://raw.githubusercontent.com/invertedhole/ooalexsosh/main/картинка2.PNG>
     <main>
-        <!-- Основное содержимое сайта -->
         <ul class="tabs">
             <li class="active" data-tab="tab1">О нас</li>
             <li data-tab="tab2">Жизнь школы</li>
