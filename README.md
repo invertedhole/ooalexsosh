@@ -1,7 +1,7 @@
 # ГБУ ОО ЗО "Алексеевская СОШ"
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мой сайт</title>
     <style>
@@ -10,8 +10,8 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #FFFFF0;
-        }
+            background-color: #FFDAB9;
+        }       
         /* Стиль для вкладок */
         .tabs {
             display: flex;
@@ -46,7 +46,7 @@
     <header>
         <!-- Заголовок сайта -->
         <h1></h1>
-<img src="https://raw.githubusercontent.com/invertedhole/ooalexsosh/main/картинка2.PNG" width="1200" height="300">
+<p><img src= https://raw.githubusercontent.com/invertedhole/ooalexsosh/main/картинка2.PNG"width="1200" height="200">
     </header>
     <main>
         <!-- Основное содержимое сайта -->
@@ -55,11 +55,11 @@
             <li data-tab="tab2">Жизнь школы</li>
             <li data-tab="tab3">Новости</li>
         </ul>
-        <div id="tab1" class="tab-content"> active">
-            <p>Контактные данные
+        <div id="tab1" class="tab-content active">
+ <p>Контактные данные
 <p>Директор:+7 990 077 2103
 <p>Отдел кадров +7 990 058 1933</p>
- </div>         
+          </div>
         <div id="tab2" class="tab-content"> 
  <body>
     <div class="tab-container">
