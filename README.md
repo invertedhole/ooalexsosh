@@ -46,7 +46,7 @@
     <header>
         <!-- Заголовок сайта -->
         <h1></h1>
-<p>><img src= https://raw.githubusercontent.com/invertedhole/ooalexsosh/main/картинка2.PNG" width="1200" height="200">
+<p>><img src= https://raw.githubusercontent.com/invertedhole/ooalexsosh/main/картинка2.PNG>
     </header>
     <main>
         <!-- Основное содержимое сайта -->
@@ -62,88 +62,36 @@
           </div>
            <div id="tab2" class="tab-content">
 <body>
-<div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'Первый звонок 2024')" id="defaultOpen">Первый звонок 2024</button>
-    <button class="tablinks" onclick="openCity(event, 'Выпуск 2024')">Выпуск 2024</button>
-</div>
-<div id="Первый звонок 2024" class="tabcontent">
-    <h3>дзынь</h3>
-    <p>дзынь.</p>
-</div>
-<div id="Выпуск 2024" class="tabcontent">
-    <h3>(=(=(=</h3>
-    <p>Выпуск 2024</p>
-<style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-/* Стили для вкладки */
-.tab {
-    overflow: hidden;
-    border: none;
-    background-color: #f1f1f1;
-}
-/* Стили для кнопок вкладки */
-.tab button {
-    background-color: #f1f1f1;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: background-color 0.5s ease;
-}
-/* Стили для активной кнопки */
-.tab button.active {
-    background-color: #ccc;
-}
-/* Стили для контента вкладки */
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-}
-/* Стили для активного контента вкладки */
-.tabcontent.active {
-    display: block;
-    animation: fadeIn 0.5s ease;
-}
-/* CSS-анимация для активного контента вкладки */
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-/* Стили для изменения цвета кнопок при наведении */
-.tab button:hover {
-    background-color: #ddd;
-}
-/* Стили для активной кнопки при наведении */
-.tab button.active:hover {
-    background-color: #ccc;
-}
-</style>
-<script>
-    function openCity(evt, cityName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
-    }
-    // Открыть первую вкладку по умолчанию
-    document.getElementById("defaultOpen").click();
-</script>
-</div>
-</body></p>
-           <ul class="tabs">
+    <div class="tab-container">
+        <div class="tab-links">
+            <button class="tab-link active" onclick="openTab(event, 'Home')">Home</button>
+            <button class="tab-link" onclick="openTab(event, 'About')">About</button>
+            <button class="tab-link" onclick="openTab(event, 'Projects')">Projects</button>
+            <button class="tab-link" onclick="openTab(event, 'Contact')">Contact</button>
         </div>
+        <div class="tab-content" id="Home">
+            <h2>Home</h2>
+            <p>Welcome to my GitHub page!</p>
+            <img src="images/home.jpg" alt="Home Image">
+        </div>
+        <div class="tab-content" id="About" style="display:none;">
+            <h2>About</h2>
+            <p>This is the about section.</p>
+            <img src="images/about.jpg" alt="About Image">
+        </div>
+        <div class="tab-content" id="Projects" style="display:none;">
+            <h2>Projects</h2>
+            <p>These are my projects.</p>
+            <img src="images/projects.jpg" alt="Projects Image">
+        </div>
+        <div class="tab-content" id="Contact" style="display:none;">
+            <h2>Contact</h2>
+            <p>Get in touch with me.</p>
+            <img src="images/contact.jpg" alt="Contact Image">
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
         <div id="tab3" class="tab-content">
             <p>Контент вкладки 3</p>
         </div>
