@@ -55,7 +55,7 @@
             <li data-tab="tab2">Жизнь школы</li>
             <li data-tab="tab3">Новости</li>
         </ul>
-        <div> id="tab1" class="tab-content active">
+        <div id="tab1" class="tab-content"> active">
             <p>Контактные данные
 <p>Директор:+7 990 077 2103
 <p>Отдел кадров +7 990 058 1933</p>   
@@ -66,21 +66,16 @@
             <button class="tab-link active" onclick="openTab(event, 'Tab1')">Выпуск 2024</button>
             <button class="tab-link" onclick="openTab(event, 'Tab2')">Мероприятия</button>
             <button class="tab-link" onclick="openTab(event, 'Tab3')">Первый звонок 2024</button>
-        </div>
         <div class="tab-content" id="Tab1">
             <h2>Выпуск 2024 Content</h2>
             <p>This is the content for Tab 1.</p>
-        </div>
         <div class="tab-content" id="Tab2" style="display:none;">
             <h2>Мероприятия Content</h2>
             <p>This is the content for Tab 2.</p>
-        </div>
         <div class="tab-content" id="Tab3" style="display:none;">
             <h2>Первый звонок 2024 Content</h2>
             <p>This is the content for Первый звонок 2024.</p>
-    </div>
     <script src="scripts.js"></script>
-</body>
  <style>
     font-family: Arial, sans-serif;
 }
@@ -115,7 +110,7 @@
 .tab-content h2 {
     margin-top: 0;
 } 
- </style>
+</style>
       <script>
                 // JavaScript для управления вкладками
         const tabs = document.querySelectorAll('.tabs li');
