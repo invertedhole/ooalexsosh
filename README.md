@@ -60,27 +60,45 @@
 <p>Директор:+7 990 077 2103
 <p>Отдел кадров +7 990 058 1933</p>   
             <div id="tab2" class="tab-content"> 
-   <body>
+ <body>
     <div class="tab-container">
         <div class="tab-links">
-            <button class="tab-link active" onclick="openTab(event, 'Tab1')">Выпуск 2024</button>
-            <button class="tab-link" onclick="openTab(event, 'Tab2')">Мероприятия</button>
-            <button class="tab-link" onclick="openTab(event, 'Tab3')">Первый звонок 2024</button>
+            <button class="tab-link active" onclick="openTab(event, 'Tab1')">Overview</button>
+            <button class="tab-link" onclick="openTab(event, 'Tab2')">Features</button>
+            <button class="tab-link" onclick="openTab(event, 'Tab3')">Installation</button>
+            <button class="tab-link" onclick="openTab(event, 'Tab4')">Usage</button>
+        </div>
         <div class="tab-content" id="Tab1">
-            <h2>Выпуск 2024 Content</h2>
-            <p>This is the content for Tab 1.</p>
+            <h2>Overview</h2>
+            <p>This is the overview content.</p>
+        </div>
         <div class="tab-content" id="Tab2" style="display:none;">
-            <h2>Мероприятия Content</h2>
-            <p>This is the content for Tab 2.</p>
+            <h2>Features</h2>
+            <p>These are the features.</p>
+        </div>
         <div class="tab-content" id="Tab3" style="display:none;">
-            <h2>Первый звонок 2024 Content</h2>
-            <p>This is the content for Первый звонок 2024.</p>
+            <h2>Installation</h2>
+            <p>Instructions for installation.</p>
+        </div>
+        <div class="tab-content" id="Tab4" style="display:none;">
+            <h2>Usage</h2>
+            <p>Usage information.</p>
+        </div>
+    </div>
     <script src="scripts.js"></script>
- <style>
+</body>
+<style>               
+body {
     font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
 }
 .tab-container {
     display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 .tab-links {
     flex: 1;
@@ -88,49 +106,44 @@
     flex-direction: column;
 }
 .tab-link {
-    padding: 10px;
+    padding: 15px;
     background-color: #f1f1f1;
     border: none;
     outline: none;
     text-align: left;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 .tab-link:hover {
-    background-color: #ddd;
+    background-color: #e0e0e0;
 }
 .tab-link.active {
     background-color: #ccc;
 }
 .tab-content {
-    flex: 4;
+    flex: 3;
     padding: 20px;
     border-left: 1px solid #ccc;
 }
 .tab-content h2 {
     margin-top: 0;
-} 
+}
+@media screen and (max-width: 600px) {
+    .tab-container {
+        flex-direction: column;
+    }
+    .tab-links {
+        flex: none;
+        width: 100%;
+    }
+    .tab-content {
+        flex: none;
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid #ccc;
+    }
+}
 </style>
-      <script>
-                // JavaScript для управления вкладками
-        const tabs = document.querySelectorAll('.tabs li');
-        const tabContents = document.querySelectorAll('.tab-content');
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                const targetTab = tab.dataset.tab;
-                const targetContent = document.getElementById(targetTab);
-                tabs.forEach(tab => {
-                    tab.classList.remove('active');
-                });
-                tabContents.forEach(content => {
-                    content.classList.remove('active');
-                });
-                tab.classList.add('active');
-                targetContent.classList.add('active');
-            });
-        });
-    </script>
-   </body>               
      <div id="tab3" class="tab-content">
             <p>Контент вкладки 3</p>
         </div>
