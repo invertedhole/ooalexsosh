@@ -83,8 +83,7 @@
     </div>
     <script src="scripts.js"></script>
 </body>
- <style              
-body {
+ <style>
     font-family: Arial, sans-serif;
 }
 .tab-container {
@@ -118,7 +117,7 @@ body {
 .tab-content h2 {
     margin-top: 0;
 } 
-     </style>
+ </style>
      <div id="tab3" class="tab-content">
             <p>Контент вкладки 3</p>
         </div>
