@@ -135,7 +135,6 @@ footer {
 <p>Отдел кадров +7 990 058 1933</p>
           </div>
            <div id="tab2" class="tab-content active">
-<body>
     <header>
         <img src="images/logo.png" alt="Logo">
         <h1>Welcome to My Website</h1>
@@ -174,11 +173,12 @@ footer {
         <p>&copy; 2024 My Website</p>
     </footer>
     <script src="scripts.js"></script>
-</body>
+   </div>
         <div id="tab3" class="tab-content">
             <p>Контент вкладки 3</p>
         </div>
-    </main>
+    </main
+   </body>
     <footer>
         <!-- Нижняя часть сайта -->
         <p>&copy; 2024  сайт  ГБУ ОО ЗО "Алексеевская СОШ"</p>
