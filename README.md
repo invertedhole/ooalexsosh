@@ -57,7 +57,7 @@
             <p>Контактные данные
 <p>Директор:+7 990 077 2103
 <p>Отдел кадров +7 990 058 1933</p>       
-         <div id="tab1" class="tab-content active">
+         <div id="tab2" class="tab-content active">
     <div class="tab-container">
         <div class="tab-links">
             <button class="tab-link active" onclick="openTab(event, 'Home')">Home</button>
