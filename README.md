@@ -59,65 +59,78 @@
 <p>Отдел кадров +7 990 058 1933</p>       
  </div>
         <div class="tab-content" id="tab2">
-                <body>
-                    <div class="tab-links">
-            <button class="tab-link active" onclick="openTab(event, 'Home')">Home</button>
-            <button class="tab-link" onclick="openTab(event, 'About')">About</button>
-            <button class="tab-link" onclick="openTab(event, 'Projects')">Projects</button>
-            <button class="tab-link" onclick="openTab(event, 'Contact')">Contact</button>
-        </div>
-        <div class="tab-content" id="Home">
-            <h2>Home</h2>
-            <p>Welcome to my GitHub page!</p>
-            <img src="images/home.jpg" alt="Home Image">
-        </div>
-        <div class="tab-content" id="About" style="display:none;">
-            <h2>About</h2>
-            <p>This is the about section.</p>
-            <img src="images/about.jpg" alt="About Image">
-        </div>
-        <div class="tab-content" id="Projects" style="display:none;">
-            <h2>Projects</h2>
-            <p>These are my projects.</p>
-            <img src="images/projects.jpg" alt="Projects Image">
-        </div>
-        <div class="tab-content" id="Contact" style="display:none;">
-            <h2>Contact</h2>
-            <p>Get in touch with me.</p>
-            <img src="images/contact.jpg" alt="Contact Image">
-        </div>
-    <script src="scripts.js"></script>
-</body>2</p>
-        </div>
+               <div class="tab-container">
         <div class="tab-links">
             <button class="tab-link active" onclick="openTab(event, 'Home')">Home</button>
             <button class="tab-link" onclick="openTab(event, 'About')">About</button>
-            <button class="tab-link" onclick="openTab(event, 'Projects')">Projects</button>
-            <button class="tab-link" onclick="openTab(event, 'Contact')">Contact</button>
         </div>
         <div class="tab-content" id="Home">
             <h2>Home</h2>
             <p>Welcome to my GitHub page!</p>
-            <img src="images/home.jpg" alt="Home Image">
         </div>
         <div class="tab-content" id="About" style="display:none;">
             <h2>About</h2>
-            <p>This is the about section.</p>
-            <img src="images/about.jpg" alt="About Image">
-        </div>
-        <div class="tab-content" id="Projects" style="display:none;">
-            <h2>Projects</h2>
-            <p>These are my projects.</p>
-            <img src="images/projects.jpg" alt="Projects Image">
-        </div>
-        <div class="tab-content" id="Contact" style="display:none;">
-            <h2>Contact</h2>
-            <p>Get in touch with me.</p>
-            <img src="images/contact.jpg" alt="Contact Image">
+            <div class="tab-container">
+                <div class="tab-links">
+                    <button class="tab-link active" onclick="openTab(event, 'Bio', 'About')">Bio</button>
+                    <button class="tab-link" onclick="openTab(event, 'Work', 'About')">Work</button>
+                </div>
+                <div class="tab-content" id="Bio">
+                    <h3>Bio</h3>
+                    <p>This is the bio section.</p>
+                </div>
+                <div class="tab-content" id="Work" style="display:none;">
+                    <h3>Work</h3>
+                    <p>This is the work section.</p>
+                </div>
+            </div>
         </div>
     </div>
     <script src="scripts.js"></script>
 </body>
+<style>/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+.tab-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.tab-links {
+    display: flex;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ccc;
+}
+.tab-link {
+    padding: 15px;
+    background-color: #f1f1f1;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex: 1;
+    font-size: 18px;
+}
+.tab-link:hover {
+    background-color: #ddd;
+}
+.tab-link.active {
+    background-color: #ccc;
+}
+.tab-content {
+    padding: 20px;
+}
+.tab-content h2, .tab-content h3 {
+    margin-top: 0;
+}
+</style>            
         <div id="tab3" class="tab-content">
             <p>Контент вкладки 3</p>
         </div>
