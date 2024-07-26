@@ -119,7 +119,7 @@
     </header>
     <nav>
         <a href="index.html">Home</a>
-        <a href="about.html">About</a>
+        <a href="https://invertedhole.github.io/test/">Дневники</a>
         <a href="services.html">Services</a>
         <a href="contact.html">Contact</a>
     </nav>
